@@ -1,0 +1,88 @@
+body {
+  background-color: rgb(36, 34, 34);
+}
+
+.container+.slider {
+  margin-top: 50px !important;
+  background-color: rgb(100, 99, 99);
+  height: 520px;
+  width: 650px;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 10px;
+}
+
+.thumbs {
+  max-width: 20%;
+  padding: 20px;
+  gap: 20px;
+}
+
+.slider {
+  position: relative;
+}
+
+.photos {
+  position: relative;
+  width: 600px;
+  transition: all 0.3s;
+  transform: scale(.9);
+  margin-top: 10px;
+  animation: slide 10s infinite;
+}
+
+.photos:hover img {
+  transform: scale(1.1);
+}
+
+.photos>img {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  border-radius: 15px;
+}
+
+.bi {
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.bi:hover {
+  color: #4e4e4e;
+}
+
+.prev {
+  position: absolute;
+  left: 10px;
+  top: 150px;
+}
+
+.next {
+  position: absolute;
+  right: 10px;
+  top: 150px;
+}
+
+.text {
+  margin-top: 100px;
+  text-transform: uppercase;
+  font-family: verdana;
+  font-size: 5em;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 3px 1px #919191,
+    1px 4px 1px #919191,
+    1px 5px 1px #919191,
+    1px 6px 1px #919191,
+    1px 7px 1px #919191,
+    1px 8px 1px #919191,
+    1px 9px 1px #919191,
+    1px 10px 1px #919191,
+    1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2),
+    1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);
+}
